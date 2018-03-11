@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "number" : 1,
+    "house" : "hearts"
+  },
+  {
+    "id": 2,
+    "number" : 2,
+    "house" : "hearts"
+  },
+  {
+    "id": 3,
+    "number" : 3,
+    "house" : "hearts"
+  },
+  {
+    "id": 4,
+    "number" : 4,
+    "house" : "hearts"
+  },
+  {
+    "id": 5,
+    "number" : 5,
+    "house" : "hearts"
+  },
+  {
+    "id": 6,
+    "number" : 6,
+    "house" : "hearts"
+  },
+  {
+    "id": 7,
+    "number" : 7,
+    "house" : "hearts"
+  },
+  {
+    "id": 8,
+    "number" : 8,
+    "house" : "hearts"
+  },
+  {
+    "id": 9,
+    "number" : 9,
+    "house" : "hearts"
+  },
+  {
+    "id": 10,
+    "number" : 10,
+    "house" : "hearts"
+  },
+  {
+    "id": 11,
+    "number" : "J",
+    "house" : "hearts"
+  },
+  {
+    "id": 12,
+    "number" : "Q",
+    "house" : "hearts"
+  },
+  {
+    "id": 13,
+    "number" : "K",
+    "house" : "hearts"
+  },
+  {
+    "id": 14,
+    "number" : 1,
+    "house" : "clubs"
+  },
+  {
+    "id": 15,
+    "number" : 2,
+    "house" : "clubs"
+  },
+  {
+    "id": 16,
+    "number" : 3,
+    "house" : "clubs"
+  },
+  {
+    "id": 17,
+    "number" : 4,
+    "house" : "clubs"
+  },
+  {
+    "id": 18,
+    "number" : 5,
+    "house" : "clubs"
+  },
+  {
+    "id": 19,
+    "number" : 6,
+    "house" : "clubs"
+  },
+  {
+    "id": 20,
+    "number" : 7,
+    "house" : "clubs"
+  },
+  {
+    "id": 21,
+    "number" : 8,
+    "house" : "clubs"
+  },
+  {
+    "id": 22,
+    "number" : 9,
+    "house" : "clubs"
+  },
+  {
+    "id": 23,
+    "number" : 10,
+    "house" : "clubs"
+  },
+  {
+    "id": 24,
+    "number" : "J",
+    "house" : "clubs"
+  },
+  {
+    "id": 25,
+    "number" : "Q",
+    "house" : "clubs"
+  },
+  {
+    "id": 26,
+    "number" : "K",
+    "house" : "clubs"
+  },
+  {
+    "id": 27,
+    "number" : 1,
+    "house" : "spades"
+  },
+  {
+    "id": 28,
+    "number" : 2,
+    "house" : "spades"
+  },
+  {
+    "id": 29,
+    "number" : 3,
+    "house" : "spades"
+  },
+  {
+    "id": 30,
+    "number" : 4,
+    "house" : "spades"
+  },
+  {
+    "id": 31,
+    "number" : 5,
+    "house" : "spades"
+  },
+  {
+    "id": 32,
+    "number" : 6,
+    "house" : "spades"
+  },
+  {
+    "id": 33,
+    "number" : 7,
+    "house" : "spades"
+  },
+  {
+    "id": 34,
+    "number" : 8,
+    "house" : "spades"
+  },
+  {
+    "id": 35,
+    "number" : 9,
+    "house" : "spades"
+  },
+  {
+    "id": 36,
+    "number" : 10,
+    "house" : "spades"
+  },
+  {
+    "id": 37,
+    "number" : "J",
+    "house" : "spades"
+  },
+  {
+    "id": 38,
+    "number" : "Q",
+    "house" : "spades"
+  },
+  {
+    "id": 39,
+    "number" : "K",
+    "house" : "spades"
+  },
+  {
+    "id": 40,
+    "number" : 1,
+    "house" : "diamond"
+  },
+  {
+    "id": 41,
+    "number" : 2,
+    "house" : "diamond"
+  },
+  {
+    "id": 42,
+    "number" : 3,
+    "house" : "diamond"
+  },
+  {
+    "id": 43,
+    "number" : 4,
+    "house" : "diamond"
+  },
+  {
+    "id": 44,
+    "number" : 5,
+    "house" : "diamond"
+  },
+  {
+    "id": 45,
+    "number" : 6,
+    "house" : "diamond"
+  },
+  {
+    "id": 46,
+    "number" : 7,
+    "house" : "diamond"
+  },
+  {
+    "id": 47,
+    "number" : 8,
+    "house" : "diamond"
+  },
+  {
+    "id": 48,
+    "number" : 9,
+    "house" : "diamond"
+  },
+  {
+    "id": 49,
+    "number" : 10,
+    "house" : "diamond"
+  },
+  {
+    "id": 50,
+    "number" : "J",
+    "house" : "diamond"
+  },
+  {
+    "id": 51,
+    "number" : "Q",
+    "house" : "diamond"
+  },
+  {
+    "id": 52,
+    "number" : "K",
+    "house" : "diamond"
+  }
+]
