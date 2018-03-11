@@ -120,10 +120,15 @@ class App extends Component {
 
 
   render() {
-
     const cards = this.state.cards.map((card, index) => {
       return (
-        <Card key={index} number={card.number} house={card.house} id={card.id} handleClick={this.handleClick} />
+        <Card
+          key={index}
+          number={card.number}
+          house={card.house}
+          id={card.id}
+          handleClick={this.handleClick}
+        />
       )
     })
     const loadCards = cards.length === 0 ? <button onClick={this.restart}>Restart</button> : cards;
