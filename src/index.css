@@ -22,8 +22,19 @@ body {
   text-align: center;
 }
 
+.login{
+  border: 1px solid #ddd;
+  width: 50%;
+  padding: 30px 10px;
+  text-align: center;
+  top: 50px;
+  left: 25%;
+  position: absolute;
+}
 
-
+.error{
+  color: red;
+}
 
 
 .card {

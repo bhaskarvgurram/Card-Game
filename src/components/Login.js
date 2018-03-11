@@ -40,18 +40,29 @@ class Login extends Component {
     render() {
       const error = this.state.error ? 'Invalid username or password' : null;
       return (
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Username:
-            <input type="text" value={this.state.value} onChange={this.handleUsernameChange} />
-          </label>
-          <label>
-            Password:
-            <input type="password" value={this.state.value} onChange={this.handlePasswordChange} />
-          </label>
-          <input type="submit" value="Submit" />
-          {error}
-        </form>
+        <div className="login">
+          <h3>Login</h3>
+          <form onSubmit={this.handleSubmit}>
+            <label>
+              Username:
+              <input type="text" value={this.state.value} onChange={this.handleUsernameChange} />
+            </label>
+            <br />
+            <br />
+            <label>
+              Password:
+              <input type="password" value={this.state.value} onChange={this.handlePasswordChange} />
+            </label>
+            <br />
+            <br />
+            <input type="submit" value="Submit" />
+            <div className="error">
+              {error}
+            </div>
+
+          </form>
+        </div>
+
 
       );
     }
