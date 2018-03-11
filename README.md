@@ -7,5 +7,5 @@ A web app for people with OCD.
 - perform
 ```
 npm install
-npm run
+npm start
 ```
