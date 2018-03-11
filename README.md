@@ -6,5 +6,6 @@ A web app for people with OCD.
 - cd into the directory
 - perform
 ```
+npm install
 npm run
 ```
