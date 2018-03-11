@@ -5,7 +5,8 @@ class Login extends Component {
       super(props);
       this.state = {
         username: '',
-        password: ''
+        password: '',
+        error: false
       };
 
       this.handleUsernameChange = this.handleChange.bind(this);
@@ -26,14 +27,18 @@ class Login extends Component {
     }
     handleSubmit(event) {
       event.preventDefault();
+      const { history } = this.props;
       if(this.state.username === 'username' && this.state.password === 'password'){
-        console.log('success');
+        this.setState({ error : false});
+        localStorage.setItem('loggedIn', true);
+        history.push('/');
       }else{
-        console.log('invalid username or password');
+        this.setState({ error : true});
       }
     }
 
     render() {
+      const error = this.state.error ? 'Invalid username or password' : null;
       return (
         <form onSubmit={this.handleSubmit}>
           <label>
@@ -45,7 +50,9 @@ class Login extends Component {
             <input type="password" value={this.state.value} onChange={this.handlePasswordChange} />
           </label>
           <input type="submit" value="Submit" />
+          {error}
         </form>
+
       );
     }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import state_json from '../state.json';
+import { bake_cookie, read_cookie } from 'sfcookies';
 
 import Card from './Card';
 import Holder from './Holder';
@@ -7,19 +8,29 @@ import Holder from './Holder';
 class App extends Component {
   constructor(props){
     super(props);
-
-    this.state = {
-      cards : this.shuffle(state_json),
-      hearts: [],
-      spades: [],
-      diamond: [],
-      clubs: []
+    if(read_cookie('state').length === 0) {
+      this.state = {
+        cards : this.shuffle(state_json),
+        hearts: [],
+        spades: [],
+        clubs: [],
+        diamond: []
+      }
+    }else{
+      this.state = read_cookie('state');
     }
+
     this.onDropHearts = this.onDropHearts.bind(this);
     this.onDropSpades = this.onDropSpades.bind(this);
     this.onDropDiamond = this.onDropDiamond.bind(this);
     this.onDropClubs = this.onDropClubs.bind(this);
+    this.handleLogout = this.handleLogout.bind(this);
 
+    const { history } = this.props;
+
+    if(localStorage.getItem('loggedIn') === 'false'){
+      history.push('/login');
+    }
   }
 
   shuffle(a) {
@@ -46,7 +57,11 @@ class App extends Component {
       this.setState({
         cards,
         hearts
+      }, function() {
+        bake_cookie('state', this.state);
       });
+
+
     }
   }
 
@@ -65,6 +80,8 @@ class App extends Component {
       this.setState({
         cards,
         spades
+      }, function() {
+        bake_cookie('state', this.state);
       });
     }
   }
@@ -84,6 +101,8 @@ class App extends Component {
       this.setState({
         cards,
         diamond
+      }, function() {
+        bake_cookie('state', this.state);
       });
     }
   }
@@ -103,6 +122,8 @@ class App extends Component {
       this.setState({
         cards,
         clubs
+      }, function() {
+        bake_cookie('state', this.state);
       });
     }
   }
@@ -114,7 +135,16 @@ class App extends Component {
       spades: [],
       clubs: [],
       diamond: []
+    }, function() {
+      bake_cookie('state', this.state);
     })
+
+  }
+
+  handleLogout() {
+    const { history } = this.props;
+    localStorage.setItem('loggedIn', false);
+    history.push('/login');
   }
 
 
@@ -134,6 +164,8 @@ class App extends Component {
     const loadCards = cards.length === 0 ? <button onClick={this.restart}>Restart</button> : cards;
     return (
       <div className="App">
+        <button onClick={this.handleLogout}>Logout</button>
+        <br />
         {loadCards}
         <Holder
           hearts={this.state.hearts}
